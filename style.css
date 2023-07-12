@@ -1,0 +1,292 @@
+@font-face {
+  font-family: fraunces;
+  src: url(/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: manrope;
+  src: url(/assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.header {
+  position: relative;
+  background-color: #24053e;
+  padding-bottom: 10rem;
+  border-bottom-right-radius: 100% 15%;
+  border-bottom-left-radius: 100% 15%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo_and_button p {
+  font-family: manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  color: #ffff;
+  border-bottom: 3px solid #44ffa1;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.logo_and_button p:hover {
+  color: #44ffa1;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.main h1 {
+  color: #ffff;
+  font-family: fraunces;
+  text-align: center;
+  font-weight: 600;
+  line-height: 80px;
+  font-size: 80px;
+  padding: 0.5rem;
+  width: 39.6rem;
+}
+
+.main span {
+  position: relative;
+}
+
+.main span::after {
+  content: "";
+  position: absolute;
+  bottom: 11px; /* odległość od podstawy napisu */
+  left: 0;
+  width: 100%;
+  border-bottom: 3px solid #42ffa1; /* przerwa */
+}
+
+.learn_more p {
+  color: #24053e;
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: #44ffa1;
+  text-align: center;
+  font-family: manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  cursor: pointer;
+  transition: 0.5s;
+  border: 2px solid #44ffa1;
+}
+
+.learn_more p:hover {
+  color: #24053e;
+  background-color: #24053e;
+  color: #44ffa1;
+  font-family: manrope;
+}
+
+.logo_and_button {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.learn_more {
+  display: flex;
+  justify-content: center;
+}
+
+.bg_pattern_1 {
+  position: absolute;
+  top: 7.063rem;
+  left: -8.438rem;
+}
+
+.bg_pattern_2 {
+  position: absolute;
+  top: 18.063rem;
+  right: -3.562rem;
+}
+.bg_pattern_3 img {
+  position: absolute;
+  max-width: 715px;
+  height: 427px;
+  right: 29%;
+  top: 80%;
+}
+
+@media screen and (max-width: 767px) {
+  .main h1 {
+    font-size: 48px;
+    line-height: 60px;
+    width: auto;
+  }
+
+  .main span::after {
+    bottom: 6px;
+  }
+
+  .logo_and_button {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .logo_and_button p {
+    margin-bottom: 1rem;
+  }
+  .bg_pattern_3 img {
+    width: 60%;
+    height: auto;
+    right: 5rem;
+    top: 25rem;
+  }
+}
+
+/* KONIEC HEADERA  */
+
+.main_content {
+  display: flex;
+  background-color: #fcf8ff;
+  border-bottom-right-radius: 100% 15%;
+  border-bottom-left-radius: 100% 15%;
+  padding-top: 25rem;
+  padding-bottom: 10rem;
+}
+
+.box {
+}
+
+.number {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: fraunces;
+  font-size: 24px;
+  margin: auto;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  color: #24053e;
+  border: 1px solid #584d62;
+  border-radius: 30.5px;
+  width: 56px;
+  height: 56px;
+}
+
+.box_header {
+  color: #24053e;
+  margin-top: 3rem;
+  text-align: center;
+  font-family: fraunces;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.box_content {
+  margin-top: 3rem;
+  color: #24053e;
+  text-align: center;
+  font-family: manrope;
+  font-weight: 400;
+  font-size: 18px;
+  font-weight: 32px;
+  padding-left: 9rem;
+  padding-right: 9rem;
+}
+
+@media screen and (max-width: 767px) {
+  .main_content {
+    flex-direction: column;
+    padding-top: 10rem;
+  }
+  .box {
+    margin-top: 3rem;
+  }
+}
+
+.ending {
+  left: 45%;
+  position: relative;
+  background-color: #24053e;
+  width: 730px;
+  padding: 2rem;
+  margin-top: 25rem;
+  margin-bottom: 15rem;
+}
+
+.ending h1 {
+  color: white;
+  font-family: fraunces;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+}
+
+.ending p {
+  color: #fff;
+  font-family: manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  padding-bottom: 4rem;
+}
+
+.ending span {
+  color: #24053e;
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: #44ffa1;
+  text-align: center;
+  font-family: manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  cursor: pointer;
+  transition: 0.5s;
+  border: 2px solid #44ffa1;
+}
+
+.ending span:hover {
+  color: #24053e;
+  background-color: #24053e;
+  color: #44ffa1;
+  font-family: manrope;
+}
+
+.ending img {
+  position: absolute;
+  width: 60%;
+  right: 45rem;
+  bottom: 13rem;
+  z-index: -1;
+}
+
+.logo_ending {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.social_media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 7rem;
+  cursor: pointer;
+}
