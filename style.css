@@ -8,8 +8,6 @@ body {
 }
 
 .header {
-  overflow: hidden;
-  white-space: wrap;
   position: relative;
   background-color: #24053e;
   padding-bottom: 10rem;
@@ -257,6 +255,11 @@ body {
     width: 100%;
   }
 
+  .header {
+    overflow: hidden;
+    white-space: wrap;
+  }
+
   .main h1 {
     font-size: 48px;
     line-height: 60px;
@@ -296,7 +299,23 @@ body {
     padding-right: 1rem;
   }
 
+  .ending {
+    position: static;
+    margin-top: 2rem;
+    width: 90%;
+  }
+
+  .ending h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .ending p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   .ending img {
-    width: none;
+    display: none;
   }
 }
